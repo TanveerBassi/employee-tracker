@@ -14,7 +14,7 @@ const employeeQuery = `
     INNER JOIN ROLE R ON E.ROLE_ID = R.ID 
     LEFT JOIN DEPARTMENT D ON R.DEPARTMENT_ID = D.ID ;`;
 
-const roleQuery = "SELECT * FROM role";
+const roleQuery = "SELECT * FROM role;";
 
 const employeeList = "SELECT * FROM employee";
 
