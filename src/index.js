@@ -23,13 +23,7 @@ const {
 
 // initialize user interaction
 const init = async () => {
-  const db = new Db(
-    dbOptions
-    // host: process.env.DB_HOST || "localhost",
-    // user: process.env.DB_USER || "root",
-    // password: process.env.DB_PASSWORD || "Password123!!",
-    // database: process.env.DB_NAME || "company_db",
-  );
+  const db = new Db(dbOptions);
 
   await db.start();
 
@@ -48,7 +42,7 @@ const init = async () => {
     // if VIEW ALL ROLES, then retrieve from database and display table
     if (userAction === "View all roles") {
       const roles = await db.query(roleQuery);
-      console.log(roles);
+      // console.log(roles);
       console.table(roles);
     }
 
