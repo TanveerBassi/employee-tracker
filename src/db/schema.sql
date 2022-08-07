@@ -1,4 +1,8 @@
 -- comapany database holding the employee, role and department tables
+DROP DATABASE IF EXISTS company_db;
+CREATE DATABASE company_db;
+
+USE company_db;
 
 CREATE TABLE department (
     id INT NOT NULL AUTO_INCREMENT,
